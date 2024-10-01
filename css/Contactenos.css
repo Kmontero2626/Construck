@@ -46,11 +46,11 @@ body{
         color: darkcyan;
 }
 .contactenos-form select{
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    color: darkcyan;
+        padding: 1%;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        color: darkcyan;
 }
 .contactenos-form input:focus{
     border-color: red;
@@ -58,6 +58,7 @@ body{
 }
 .form-container button{
     padding: 10px;
+    margin-top: 10px;
     background-color: darkgray;
     color: rgb(0, 0, 0);
     border-radius: 10px;
