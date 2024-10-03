@@ -1,12 +1,14 @@
-function validarRegistro(){
+function validarRegistro(event){
+    event.preventDefault(); // Evita que el formulario se envíe y la página se refresque
+
     let nombreDeUsuario=document.getElementById("nombre").value; 
     console.log(nombreDeUsuario);
-    /*let email=document.getElementById("email").value; 
+    let email=document.getElementById("email").value; 
     console.log(email);
    let number=document.getElementById("number").value; 
     console.log(number);
     let ciudad=document.getElementById("ciudad").value; 
     console.log(ciudad);
     let password=document.getElementById("password").value; 
-    console.log(password); */
+    console.log(password); 
 }

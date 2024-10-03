@@ -16,15 +16,17 @@
     <body>
         <div class="form-container">
             <form class="registration-form">
+                <!--Profe:El comportamiento por defecto del form es enviar y refrescar-->
                 <!--subtitulo-->
-                <input placeholder="Nombre de Usuario:" type="text" id="nombre" name="nombre" required />
+                <input placeholder="Nombre de Usuario:" type="text" id="nombre" name="nombre" />
                 <!--capturar información-->
-                <input placeholder="Correo Electronico:" type="email" id="email" name="email" required />
-                <input placeholder="Telefono:" type="number" id="number" name="number" required />
-                <input placeholder="Ciudad:" type="text" id="ciudad" name="ciudad" required />
+                <input placeholder="Correo Electronico:" type="email" id="email" name="email"  />
+                <input placeholder="Telefono:" type="number" id="number" name="number"  />
+                <input placeholder="Ciudad:" type="text" id="ciudad" name="ciudad"  />
                 <label for="Password">Contraseña:</label>
-                <input type="password" name="password" required />
-                <button onclick="validarRegistro()">Enviar</button> 
+                <input type="password" name="password"  />
+                <!--Profe:Para envitar el comportamiento por defecto enviamos el param event-->
+                <button onclick="validarRegistro(event)">Enviar</button> 
             </form>
         </div>
     </body>
