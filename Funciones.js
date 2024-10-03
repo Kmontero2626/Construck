@@ -1,5 +1,6 @@
-function validarRegistro() {
-    let nombreDeUsuario = document.getElementById("nombre").value;
+function validarRegistro(event){
+    event.preventDefault(); // Evita que el formulario se envíe y la página se refresque
+    let nombreDeUsuario=document.getElementById("nombre").value;
     console.log(nombreDeUsuario);
     let email = document.getElementById("email").value;
     console.log(email);
