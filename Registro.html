@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- hace que la pagina sea "responsive" en dispositivos moviles -->
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="css/Registro.css">
+</head>
+    <!-- Header de la pagina -->
+    <header class="header">
+        <h1>REGISTRARME</h1> <!-- Registro -->
+        </div>
+    </header>
+    <!-- Contenido de la pagina principal -->
+    <body>
+        <div class="form-container">
+            <form class="registration-form">
+                <!--subtitulo-->
+                <input placeholder="Nombre de Usuario:" type="text" id="nombre" name="nombre" required />
+                <!--capturar información-->
+                <input placeholder="Correo Electronico:" type="email" id="email" name="email" required />
+                <input placeholder="Telefono:" type="number" id="number" name="number" required />
+                <input placeholder="Ciudad:" type="text" id="ciudad" name="ciudad" required />
+                <label for="Password">Contraseña:</label>
+                <input type="password" name="password" required />
+                <button onclick="validarRegistro()">Enviar</button> 
+            </form>
+        </div>
+    </body>
+     <!-- Pien de pagina -->
+     <footer class="footer">
+        <div class="footer-content"></div>
+        <div class="Texto">Nombre del Proyecto</div> <!-- paceholder Texto -->
+     </footer>
+     <script src="Funciones.js"></script>
+</body>
+</html>
