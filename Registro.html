@@ -17,18 +17,16 @@
         <div class="form-container">
             <form class="registration-form">
                 <!--subtitulo-->
-                <label for="nombre">Nombre de Usuario:</label>
-                <input type="text" id="nombre" name="nombre" required />
+                <input placeholder="Nombre de Usuario:" type="text" id="nombre" name="nombre" required />
                 <!--capturar información-->
-                <label for="email">Correo electronico:</label>
-                <input type="text" name="email" required />
+                <input placeholder="Correo Electronico:" type="email" id="email" name="email" required />
                 <label for="telefono">Telefono:</label>
                 <input type="number" name="telefono" required />
                 <label for="text">Ciudad:</label>
                 <input type="text" name="text" required />
                 <label for="Password">Contraseña:</label>
                 <input type="password" name="password" required />
-                <button>Enviar</button>
+                <button onclick="validarRegistro()">Enviar</button> 
             </form>
         </div>
     </body>
@@ -37,5 +35,6 @@
         <div class="footer-content"></div>
         <div class="Texto">Nombre del Proyecto</div> <!-- paceholder Texto -->
      </footer>
+     <script src="Funciones.js"></script>
 </body>
 </html>
