@@ -16,15 +16,16 @@
     <body>
         <div class="form-container">
             <form class="registration-form">
+                <!--Profe:El comportamiento por defecto del form es enviar y refrescar-->
                 <!--subtitulo-->
-                <input placeholder="Nombre de Usuario:" type="text" id="nombre" name="nombre" required />
+                <input maxlength="15" placeholder="Nombre de Usuario:" type="text" id="nombre" name="nombre" required />
                 <!--capturar información-->
-                <input placeholder="Correo Electronico:" type="email" id="email" name="email" required />
-                <input placeholder="Telefono:" type="number" id="number" name="number" required />
-                <input placeholder="Ciudad:" type="text" id="ciudad" name="ciudad" required />
-                <label for="Password">Contraseña:</label>
-                <input type="password" name="password" required />
-                <button onclick="validarRegistro()">Enviar</button> 
+                <input maxlength="30" placeholder="Correo Electronico:" type="email" id="email" name="email" required />
+                <input maxlength="10" placeholder="Telefono:" type="number" id="number" name="number" required />
+                <input maxlength="15" placeholder="Ciudad:" type="text" id="ciudad" name="ciudad" required />
+                <label for="password">Contraseña:</label>
+                <input maxlength="15" type="password" id="password" name="password" required />
+                <button onclick="validarRegistro(event)">Enviar</button> 
             </form>
         </div>
     </body>
