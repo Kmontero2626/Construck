@@ -1,0 +1,555 @@
+:root{
+   --primary-clr: #75a0dc;
+   --anchoPagina: 1200px;
+
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins" , Arial, Helvetica, sans-serif;   
+}
+body {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #d3d3d3; 
+   flex-direction: column;
+   display: flex;
+}
+
+/* 1. ENCABEZADO DE LA PAGINA */
+
+.EncabezadoPagina{
+   position: relative;
+   width: var(--anchoPagina);
+   height: 180px;
+   margin: 0px 0px ;
+   padding: 0px 50px ;
+   display: flex;
+   border-radius: 15px;
+   background-color: #db9d36;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.EncabezadoPagina .logoCompañia{
+   position: relative;
+   height: 140px;
+   width: 100%;
+   display: flex;   
+}
+
+.EncabezadoPagina .interaccionSeccion1{
+   position: relative;
+   height: 140px;
+   width: 100%;
+   display: flex;  
+   color: var(--primary-clr);
+   margin: 0cm;
+   padding: 0px;
+}
+.BotonSeccion1{
+   height: 75px;
+   border: #db9d36;
+   cursor: pointer;
+   align-self: flex-end ;  
+   margin-left: 152px;
+}
+.imagenBotonSC1{
+   height: 75px;
+   background-color: #db9d36;
+}
+
+/* 2. TITULO DE SECCION */
+
+
+
+/* 2. TITULO DE SECCION SERVICIOS */ 
+
+.interaacionSuperior{
+   background-color: #dac097;
+   width: 1200px;
+   margin: 5px;
+   display: flex;
+   flex-flow: row;
+}
+
+.tituloSeccion{
+   position: relative;
+   background-color:#dac097;
+   flex-flow: row;
+   display: flex;
+   align-self:flex-start;
+   margin-left: 20px;
+   align-self: center;
+
+}
+
+.buscadorServicio{
+   position: relative;
+   background-color:#dac097;
+   flex-flow: row;
+   display: flex;
+   align-self:flex-end;
+   margin-left: 700px;
+   align-items: center;
+
+
+}
+
+.botonBusqueda{
+
+   border: #dac097;
+   align-self: flex-start ;  
+   margin-left: 10px;
+}
+
+
+.imagenBotonSSC1{
+   height: 40px;
+   background-color: #dac097;
+   margin: 0px;
+   padding: 0px;
+   align-self: center;
+   border: #dac097;
+   display: flex;
+   cursor: help;
+}
+
+
+
+
+
+ /* 3. CUERPO DE LA PAGINA CALENDAR*/
+
+
+.navegacion .container {
+   position: relative;
+   width: 1200px;
+   min-height: 850px;
+   margin: 10px ;
+   padding: 5px;
+   color: rgb(228, 208, 208);
+   display: flex;
+   border-radius: 10px;
+   background-color: rgb(123, 123, 151);
+}
+.left {
+   width: 70%;
+   padding: 20px;
+}
+.calendar {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;   
+   color: rgb(0, 0, 0);
+   border-radius: 5px;
+   background-color: rgb(225, 210, 210);
+}
+.calendar::before,
+.calendar::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 100%;
+   width: 12px;
+   height: 97%;
+   border-radius: 0 5 px 5px 0;
+   background-color: #8f8e8a;
+   transform: translateY(-50%);
+}
+.calendar::before{
+   height: 94%;
+   left: calc(100% + 12px);
+   background-color: rgb(185, 185, 185);
+}
+.calendar .month {
+   width: 100%;
+   height: 150px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 50px;
+   font-size: 1.2rem;
+   font-weight: 500;
+   text-transform: capitalize;
+}
+.calendar .month .prev,
+.calendar .month .next {
+   cursor: pointer;
+}
+.calendar .month .prev:hover,
+.calendar .month .next:hover {
+   color: var(--primary-clr);
+}
+.calendar .weekdays{
+   width:100%;
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+   font-size: 1rem;
+   font-weight: 500;
+   text-transform: capitalize;
+}
+.calendar.weekdays div{
+   width:14.28%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.calendar .days{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 0 20px;
+   font-size: 1rem;
+   font-weight: 500;
+   margin-bottom: 20px;
+}
+.calendar .days .day{
+   width: 14.28%;
+   height: 90px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   color: var(--primary-clr);
+   border: 1px solid #a4a3a3;
+}
+.calendar .day:not(.prev-date, .next-date):hover{
+   color: #edbe71;
+   background-color: var(--primary-clr);
+}
+.calendar .days .prev-date, 
+.calendar .days .next-date {
+   color: #b3b3b3;
+
+}
+.calendar .days .active {
+   position:relative;
+   font-size: 1.5rem;
+   color: #ffffff;
+   background-color: var(--primary-clr);
+}
+.calendar .days .active::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   box-shadow: 0 0 10px 2px var(--primary-clr);
+}
+.calendar .days .today{
+   font-size: 1.5rem;
+}
+.calendar .days .event{
+   position:   relative;
+}
+.calendar .days .event::after{
+   content: '';
+   position: absolute;
+   bottom: 10%;
+   left: 50%;
+   width: 75%;
+   height: 6px;
+   border-radius: 30px;
+   transform: translateX(-50%);
+   background-color: var(--primary-clr);
+}
+.calendar .event:hover::after{
+   background-color: #ffff;
+}
+.calendar .active.event::after{
+   background-color: #ffff;
+   bottom: 20%;
+}
+.calendar  .active.event{
+   padding-bottom: 10px;
+
+}
+.calendar .goto-today {
+   width: 100%;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 5px;
+   padding: 0 20px;
+   margin-bottom: 20px;
+   color: var(--primary-clr);
+}
+.calendar .goto-today .goto{
+   display:flex;
+   align-items: center;
+   border-radius: 5px;
+   overflow: hidden;
+   border: 1px solid var(--primary-clr);
+
+}
+.calendar .goto-today .goto input{
+   width: 100%;
+   height: 30px;
+   outline: none;
+   border: none;
+   border-radius: 5px;
+   padding: 0 20px;
+   color: var(--primary-clr);
+   border-radius: 5px;
+}
+.calendar .goto-today button{
+   padding: 5px 10px;
+   border: 1px solid var (--primary-clr);
+   border-radius: 5px;
+   background-color: transparent;
+   cursor: pointer;
+   color: var(--primary-clr);
+}
+.calendar .goto-today button:hover {
+   color: #fff;
+   background-color: var (--primary-clr);
+}
+.calendar .goto-today .goto button {
+   border: none;
+   border-left: 1px solid var(--primary-clr);
+   border-radius: 0;
+   
+}
+
+
+.rigth {
+   width: 40%;
+   padding: 20px;
+}
+
+.resumenServicios {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   padding-top: 15px; 
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+   align-items: center ;
+   align-content: center;
+   justify-content: space-between;   
+   color: rgb(0, 0, 0);
+   border-radius: 5px;
+   background-color: rgb(225, 210, 210);
+}
+
+.servicioNumero{
+
+   position: relative;
+   width: 90%;
+   height: 20%;
+   display: flex;
+   flex-direction: row;
+
+   color: rgb(0, 0, 0);
+   border-radius: 5px;
+   background-color: rgba(181, 177, 177, 0.416);
+}
+
+
+.rigth .servicioNumero .cbServicio{
+
+   position: absolute;
+   top: 9%;
+   left: 5%;
+
+   width: 40px;
+   height: 40px;
+}
+
+
+.rigth .servicioNumero .nombreServicioSeleccionado{
+
+   position: absolute;
+   top: 5%;
+   left: 15%;
+}
+
+.rigth .servicioNumero .cantidadServicioSeleccionado{
+
+   position: absolute;
+   top: 5%;
+   left: 75%;
+}
+
+.rigth .servicioNumero .fechaProgramacionServicioSeleccionado{
+
+   position: absolute;
+   top: 50%;
+   left: 15%;
+}
+
+
+.rigth .servicioNumero .subTotalServicioSeleccionado{
+
+   position: absolute;
+   top: 50%;
+   left:70%;
+}
+
+.rigth .resumenServicios .totalValorServicios{
+
+
+   position: relative;
+   width: 95%;
+   height: 10%;
+   padding-top: 5%; 
+   display: flex;
+   justify-content: end;
+
+   color: rgb(0, 0, 0);
+   border-radius: 5px;
+   background-color: rgba(195, 191, 191, 0.401);
+   
+}
+
+
+
+
+ /* 3. CUERPO DE LA PAGINA SERVICE*/
+
+.resumenServiciosP{
+   position: relative;
+   width: 1200px;
+   height: 800px;
+   align-items:center;
+   background-color: #d7d7d79c;
+   display: flex;
+   justify-content: space-around;
+   padding: 5px;
+   flex-wrap: wrap;
+   
+
+}
+
+.servicioNumeroP{
+   position: relative;
+   width: 35%;
+   height: 20%;
+   display: flex;
+   flex-direction: column;
+   color: rgb(0, 0, 0);
+   border-radius: 5px;
+   background-color: rgb(150, 147, 147);
+   margin: 10px;
+}
+
+.servicioNumeroP .cbServicio{
+   
+   position: absolute;
+   top: 2%;
+   left: 85%;
+
+   width: 50px;
+   height: 20px;
+}
+
+
+.nombreServicioSeleccionado{
+
+   position: absolute;
+   top: 7%;
+   left: 15%;
+}
+
+
+.imagenBotonSSI2{
+
+   position: absolute;
+   top: 30%;
+   left: 5%;
+   width: 100px;
+   height: 100px;
+
+}
+
+.textoDescripcion{
+   position: absolute;
+   top: 30%;
+   left: 40%;
+
+   width: 200px;
+   height: 1000px;
+
+}
+
+
+
+
+
+/* */
+ .interaccionSeccion2 {
+   height: 110px;
+   width: var(--anchoPagina);
+   border-radius: 10px;
+   background-color: #b4acc7;  
+   justify-content: space-between;
+   align-items: center;
+   align-content: center;
+
+   display: flex;
+   padding: 0p 0%;
+   margin: 1%;
+}
+
+
+.Boton1InteraccionSeccion2{
+
+   border: none;
+   cursor: pointer; 
+   background-color: #b4acc7;  ;  
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+.imagenBotonSI2{
+   height: 58px;
+   background-color: #b4acc7;  ;
+}
+
+
+
+
+/* 4.PIE DE LA PAGINA */
+
+.piePagina {
+   height: 110px;
+   width: var(--anchoPagina);
+   border-radius: 10px;
+   background-color: #bdbdbd;  
+   justify-content: space-between;
+   align-items: center;
+   display: flex;
+   padding: 0px 90px;
+
+}
+.BotonPie{
+
+   border: none;
+   cursor: pointer; 
+   background-color: #bdbdbd;  
+   justify-content: space-between;
+   align-items: center;
+  
+}
+
+.imagenBotonPP{
+   height: 58px;
+   background-color: none;
+}
+

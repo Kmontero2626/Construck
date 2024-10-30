@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name=""viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  -->
+    <title>Calendario</title>
+    <base target="_top"/>
+    <link rel="stylesheet" href="Stylessheet.css"/>    
+ 
+  </head>
+  <body>
+
+    <!-- 1. ENCABEZADO DE LA PAGINA -->
+    <div class="EncabezadoPagina">
+      <div class="logoCompañia">
+        <img src="LogoEmpresa.png">
+      </div>
+      <div class="interaccionSeccion1Servicio">
+        <button onclick="functionLogin()" type="button" class="BotonSeccion1">
+          <img src="login.png" class="imagenBotonSC1">
+        </button>
+        <button type="button" class="BotonSeccion1">
+          <img src="sign in.png" class="imagenBotonSC1">
+        </button>
+      </div>
+      
+    </div>
+
+    <!-- 2. TITULO DE SECCION -->
+    
+    <div class="interaacionSuperior">
+      <div class="tituloSeccion">
+        <h2>Portafolio Servicios</h2>
+      </div>
+      <div class="buscadorServicio">
+        <div class="palabraBsuqueda">
+          <input type="text" id="buscadorServicioTexto" class="buscadorServicioTexto">
+        </div>
+        <div class="botonBusqueda">
+          <button onclick="buscarElemento()" type="button" class="Botonbusquedaclick">
+            <img src="buscar.png" class="imagenBotonSSC1">
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- 3. CUERPO DE LA PAGINA -->
+    <div class="navegacion"  >
+      <div class ="container">
+          <div class="resumenServiciosP">
+            <div class="servicioNumeroP">
+              <h1 class="nombreServicioSeleccionado">servicio 1</h1>
+              <input type="number" id="cbServicio1" value="valuecbServicio1" class="cbServicio" >
+              <img src="imagenServicio.jpg" class="imagenBotonSSI2">
+              <i class="textoDescripcion">este es el texto de la descripcion de servicio, es un texto corto con las caracteristicas del servicio que serive pra identificarlo</i>
+            </div>
+
+            <div class="servicioNumeroP">
+              <h1 class="nombreServicioSeleccionado">servicio 2</h1>
+              <input type="number" id="cbServicio1" value="valuecbServicio1" class="cbServicio" >
+              <img src="imagenServicio.jpg" class="imagenBotonSSI2">
+              <i class="textoDescripcion">este es el texto de la descripcion de servicio, es un texto corto con las caracteristicas del servicio que serive pra identificarlo</i>
+            </div>
+
+            <div class="servicioNumeroP">
+              <h1 class="nombreServicioSeleccionado">servicio 3</h1>
+              <input type="number" id="cbServicio1" value="valuecbServicio1" class="cbServicio" >
+              <img src="imagenServicio.jpg" class="imagenBotonSSI2">
+              <i class="textoDescripcion">este es el texto de la descripcion de servicio, es un texto corto con las caracteristicas del servicio que serive pra identificarlo</i>
+            </div>
+
+            <div class="servicioNumeroP">
+              <h1 class="nombreServicioSeleccionado">servicio 4</h1>
+              <input type="number" id="cbServicio1" value="valuecbServicio1" class="cbServicio" >
+              <img src="imagenServicio.jpg" class="imagenBotonSSI2">
+              <i class="textoDescripcion">este es el texto de la descripcion de servicio, es un texto corto con las caracteristicas del servicio que serive pra identificarlo</i>
+            </div>
+
+
+          </div>
+      </div>
+    </div>
+      
+ <!-- 4. ZONA DE INTER ACCION 2  -->
+
+      <div class="interaccionSeccion2">
+        <button type="button" class="Boton1InteraccionSeccion2" id="botonInteraccionSeccion2" onclick="location.href='http://127.0.0.1:3000/Construck/Desarrollo/Index/Codigo/Calendar.html            ' " >
+          <img src="Agendar.png" class="imagenBotonSI2">
+        </button>
+      </div>
+
+         
+
+    </div>
+
+
+    <!-- 5. PIE DE LA PAGINA -->
+    <div class="piePagina">
+
+        <button type="button" class="BotonPie" id="botonPie1">
+          <img src="botonNosotros_FT.png" class="imagenBotonPP">
+        </button>
+
+        <button type="button" class="BotonPie" id="botonPie2">
+          <img src="botonUbicacion_FT.png" class="imagenBotonPP">
+        </button>
+
+        <button type="button" class="BotonPie" id="botonPie3">
+          <img src="contactenos_FT.png" class="imagenBotonPP">
+        </button>
+
+    </div>
+
+   </div>
+  
+ 
+   <script src="JavaScript.js"></script>
+
+  </body>
+</html>
